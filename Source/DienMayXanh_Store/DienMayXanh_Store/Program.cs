@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DienMayXanh_Store.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace DienMayXanh_Store
 {
     internal static class Program
     {
+        public static ContextDB context = new ContextDB();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace DienMayXanh_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
