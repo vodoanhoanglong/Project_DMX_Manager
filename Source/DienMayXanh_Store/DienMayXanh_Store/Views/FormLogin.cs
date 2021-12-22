@@ -14,7 +14,8 @@ namespace DienMayXanh_Store
 {
     public partial class FormLogin : Form
     {
-        public static STAFF info = null;
+        public static FormLogin instance;
+        public STAFF info = null;
 
         private ContextDB context = Program.context;
         private bool isShowPassword = false;
@@ -23,6 +24,7 @@ namespace DienMayXanh_Store
         public FormLogin()
         {
             InitializeComponent();
+            instance = this;
             txbPassword.UseSystemPasswordChar = true;
         }
 
