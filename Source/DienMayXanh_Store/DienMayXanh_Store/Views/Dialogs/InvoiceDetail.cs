@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DienMayXanh_Store.Views
+namespace DienMayXanh_Store.Views.Dialogs
 {
-    public partial class FormAddProduct : Form
+    public partial class InvoiceDetail : Form
     {
-        public FormAddProduct()
+        public InvoiceDetail()
         {
             InitializeComponent();
         }

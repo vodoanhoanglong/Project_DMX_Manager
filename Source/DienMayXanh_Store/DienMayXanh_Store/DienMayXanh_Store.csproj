@@ -116,6 +116,18 @@
     <Compile Include="Models\RECIEPT.cs" />
     <Compile Include="Models\STAFF.cs" />
     <Compile Include="Models\WAREHOUSE.cs" />
+    <Compile Include="Views\CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerDetail.designer.cs">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\EditCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\EditCustomerInfo.designer.cs">
+      <DependentUpon>EditCustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Dialogs\FormAddCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,11 +140,17 @@
     <Compile Include="Views\Dialogs\FormAddProducer.Designer.cs">
       <DependentUpon>FormAddProducer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FormAddProduct.cs">
+    <Compile Include="Views\Dialogs\InvoiceDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormAddProduct.Designer.cs">
-      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    <Compile Include="Views\Dialogs\InvoiceDetail.designer.cs">
+      <DependentUpon>InvoiceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormCustomer.designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormExportProduct.cs">
       <SubType>Form</SubType>
@@ -163,7 +181,7 @@
     <Compile Include="Views\FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormMenu.Designer.cs">
+    <Compile Include="Views\FormMenu.designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormProduct.cs">
@@ -183,11 +201,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Dialogs\FormAddCategory.resx">
       <DependentUpon>FormAddCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dialogs\FormAddProducer.resx">
       <DependentUpon>FormAddProducer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\InvoiceDetail.resx">
+      <DependentUpon>InvoiceDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormExportProduct.resx">
       <DependentUpon>FormExportProduct.cs</DependentUpon>

@@ -1,7 +1,6 @@
-﻿
-namespace DienMayXanh_Store.Views
+﻿namespace DienMayXanh_Store.Views.Dialogs
 {
-    partial class FormAddProduct
+    partial class EditCustomerInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +31,7 @@ namespace DienMayXanh_Store.Views
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormAddProduct";
+            this.Text = "EditCustomerInfo";
         }
 
         #endregion
