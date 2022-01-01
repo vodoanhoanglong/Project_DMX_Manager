@@ -41,6 +41,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.dgv_listCustomer = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,9 +51,6 @@
             this.CustomerPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ViewDetail = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listCustomer)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,14 +62,15 @@
             // 
             // dgv_listCustomer
             // 
+            this.dgv_listCustomer.AllowUserToAddRows = false;
             this.dgv_listCustomer.AllowUserToDeleteRows = false;
             this.dgv_listCustomer.AllowUserToResizeColumns = false;
             this.dgv_listCustomer.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(240)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dgv_listCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_listCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
@@ -77,7 +78,7 @@
             this.dgv_listCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(73)))), ((int)(((byte)(100)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -94,15 +95,15 @@
             this.btn_ViewDetail});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(240)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_listCustomer.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_listCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_listCustomer.EnableHeadersVisualStyles = false;
-            this.dgv_listCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.dgv_listCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.dgv_listCustomer.Location = new System.Drawing.Point(0, 39);
             this.dgv_listCustomer.Name = "dgv_listCustomer";
             this.dgv_listCustomer.ReadOnly = true;
@@ -123,7 +124,7 @@
             this.dgv_listCustomer.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgv_listCustomer.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgv_listCustomer.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.dgv_listCustomer.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.dgv_listCustomer.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.dgv_listCustomer.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
             this.dgv_listCustomer.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dgv_listCustomer.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -139,71 +140,6 @@
             this.dgv_listCustomer.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_listCustomer.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_listCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.btn_ViewDetail_Click);
-            // 
-            // No
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.No.DefaultCellStyle = dataGridViewCellStyle3;
-            this.No.FillWeight = 26.05792F;
-            this.No.HeaderText = "STT";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            // 
-            // CustomerID
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CustomerID.DefaultCellStyle = dataGridViewCellStyle4;
-            this.CustomerID.FillWeight = 94.82663F;
-            this.CustomerID.HeaderText = "Mã khách hàng";
-            this.CustomerID.Name = "CustomerID";
-            this.CustomerID.ReadOnly = true;
-            // 
-            // CustomerName
-            // 
-            this.CustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CustomerName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.CustomerName.FillWeight = 110.6673F;
-            this.CustomerName.HeaderText = "Họ tên khách hàng";
-            this.CustomerName.Name = "CustomerName";
-            this.CustomerName.ReadOnly = true;
-            // 
-            // CustomerGender
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CustomerGender.DefaultCellStyle = dataGridViewCellStyle6;
-            this.CustomerGender.FillWeight = 65.31237F;
-            this.CustomerGender.HeaderText = "Giới tính";
-            this.CustomerGender.Name = "CustomerGender";
-            this.CustomerGender.ReadOnly = true;
-            // 
-            // CustomerPhone
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CustomerPhone.DefaultCellStyle = dataGridViewCellStyle7;
-            this.CustomerPhone.FillWeight = 81.21831F;
-            this.CustomerPhone.HeaderText = "Số điện thoại";
-            this.CustomerPhone.Name = "CustomerPhone";
-            this.CustomerPhone.ReadOnly = true;
-            // 
-            // CustomerAddress
-            // 
-            this.CustomerAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CustomerAddress.DefaultCellStyle = dataGridViewCellStyle8;
-            this.CustomerAddress.FillWeight = 302.964F;
-            this.CustomerAddress.HeaderText = "Địa chỉ";
-            this.CustomerAddress.Name = "CustomerAddress";
-            this.CustomerAddress.ReadOnly = true;
-            // 
-            // btn_ViewDetail
-            // 
-            this.btn_ViewDetail.FillWeight = 62.16824F;
-            this.btn_ViewDetail.HeaderText = "";
-            this.btn_ViewDetail.Name = "btn_ViewDetail";
-            this.btn_ViewDetail.ReadOnly = true;
-            this.btn_ViewDetail.Text = "Xem";
-            this.btn_ViewDetail.UseColumnTextForButtonValue = true;
             // 
             // guna2TextBox1
             // 
@@ -265,6 +201,77 @@
             this.guna2GroupBox1.Text = "Danh Sách Khách Hàng";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2GroupBox1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
+            // 
+            // No
+            // 
+            this.No.DataPropertyName = "No";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.No.DefaultCellStyle = dataGridViewCellStyle3;
+            this.No.FillWeight = 26.05792F;
+            this.No.HeaderText = "STT";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.DataPropertyName = "CustomerID";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.CustomerID.DefaultCellStyle = dataGridViewCellStyle4;
+            this.CustomerID.FillWeight = 94.82663F;
+            this.CustomerID.HeaderText = "Mã khách hàng";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.ReadOnly = true;
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CustomerName.DataPropertyName = "Name";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.CustomerName.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CustomerName.FillWeight = 110.6673F;
+            this.CustomerName.HeaderText = "Họ tên khách hàng";
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.ReadOnly = true;
+            // 
+            // CustomerGender
+            // 
+            this.CustomerGender.DataPropertyName = "Gender";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CustomerGender.DefaultCellStyle = dataGridViewCellStyle6;
+            this.CustomerGender.FillWeight = 65.31237F;
+            this.CustomerGender.HeaderText = "Giới tính";
+            this.CustomerGender.Name = "CustomerGender";
+            this.CustomerGender.ReadOnly = true;
+            // 
+            // CustomerPhone
+            // 
+            this.CustomerPhone.DataPropertyName = "Phone";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CustomerPhone.DefaultCellStyle = dataGridViewCellStyle7;
+            this.CustomerPhone.FillWeight = 81.21831F;
+            this.CustomerPhone.HeaderText = "Số điện thoại";
+            this.CustomerPhone.Name = "CustomerPhone";
+            this.CustomerPhone.ReadOnly = true;
+            // 
+            // CustomerAddress
+            // 
+            this.CustomerAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CustomerAddress.DataPropertyName = "Address";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.CustomerAddress.DefaultCellStyle = dataGridViewCellStyle8;
+            this.CustomerAddress.FillWeight = 302.964F;
+            this.CustomerAddress.HeaderText = "Địa chỉ";
+            this.CustomerAddress.Name = "CustomerAddress";
+            this.CustomerAddress.ReadOnly = true;
+            // 
+            // btn_ViewDetail
+            // 
+            this.btn_ViewDetail.FillWeight = 62.16824F;
+            this.btn_ViewDetail.HeaderText = "";
+            this.btn_ViewDetail.Name = "btn_ViewDetail";
+            this.btn_ViewDetail.ReadOnly = true;
+            this.btn_ViewDetail.Text = "Xem";
+            this.btn_ViewDetail.UseColumnTextForButtonValue = true;
             // 
             // FormCustomer
             // 
