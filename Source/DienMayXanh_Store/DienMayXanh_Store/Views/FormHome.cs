@@ -105,6 +105,7 @@ namespace DienMayXanh_Store.Views
 
         private void loadData()
         {
+            chart.Datasets.Clear();
             this.revenue = new List<decimal>();
             this.profit = new List<decimal>();
             decimal? money = 0, totalProfitInDate = 0, totalProfit = 0;
@@ -130,7 +131,7 @@ namespace DienMayXanh_Store.Views
                 this.profit.Add((decimal)totalProfit);
             }
 
-            Line.loadChart(chart, this.revenue, this.profit);
+            LineDuplicate.loadChart(chart, this.revenue, this.profit);
         }
     }
 }
