@@ -86,7 +86,7 @@
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(225)))));
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("SVN-Neutraface 2", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(486, 6);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
@@ -110,10 +110,10 @@
             // 
             this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(225)))));
-            this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(225)))));
+            this.btn_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
             this.btn_exit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(3)))), ((int)(((byte)(54)))));
             this.btn_exit.HoverState.Parent = this.btn_exit;
-            this.btn_exit.IconColor = System.Drawing.Color.White;
+            this.btn_exit.IconColor = System.Drawing.Color.DimGray;
             this.btn_exit.Location = new System.Drawing.Point(1068, 0);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.ShadowDecoration.Parent = this.btn_exit;
@@ -126,7 +126,7 @@
             this.guna2Shapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(225)))));
             this.guna2Shapes1.BorderThickness = 0;
             this.guna2Shapes1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(158)))), ((int)(((byte)(225)))));
+            this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
             this.guna2Shapes1.Location = new System.Drawing.Point(0, 0);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
@@ -139,7 +139,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(222)))), ((int)(((byte)(235)))));
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(225)))), ((int)(((byte)(243)))));
             this.guna2Panel2.Controls.Add(this.btn_printExportBill);
             this.guna2Panel2.Controls.Add(this.btn_printInvoice);
             this.guna2Panel2.Controls.Add(this.guna2GroupBox2);
@@ -219,18 +219,19 @@
             this.dgv_listProduct.AllowUserToDeleteRows = false;
             this.dgv_listProduct.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(210)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dgv_listProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_listProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_listProduct.BackgroundColor = System.Drawing.Color.White;
             this.dgv_listProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_listProduct.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgv_listProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(215)))), ((int)(((byte)(249)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -246,9 +247,9 @@
             this.SubTotal});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(210)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_listProduct.DefaultCellStyle = dataGridViewCellStyle9;
@@ -498,7 +499,7 @@
             this.No.DataPropertyName = "No";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.No.DefaultCellStyle = dataGridViewCellStyle3;
-            this.No.FillWeight = 34.35027F;
+            this.No.FillWeight = 28.49731F;
             this.No.HeaderText = "STT";
             this.No.Name = "No";
             this.No.ReadOnly = true;
@@ -508,7 +509,7 @@
             this.ProductID.DataPropertyName = "ProductID";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.ProductID.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ProductID.FillWeight = 132.142F;
+            this.ProductID.FillWeight = 109.6263F;
             this.ProductID.HeaderText = "Mã Sản Phẩm";
             this.ProductID.Name = "ProductID";
             this.ProductID.ReadOnly = true;
@@ -519,7 +520,7 @@
             this.ProductName.DataPropertyName = "ProductName";
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.ProductName.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ProductName.FillWeight = 218.6967F;
+            this.ProductName.FillWeight = 181.4328F;
             this.ProductName.HeaderText = "Tên Sản Phẩm";
             this.ProductName.Name = "ProductName";
             this.ProductName.ReadOnly = true;
@@ -529,7 +530,7 @@
             this.ProductQuantiy.DataPropertyName = "Quantity";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.ProductQuantiy.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ProductQuantiy.FillWeight = 55.05382F;
+            this.ProductQuantiy.FillWeight = 45.67317F;
             this.ProductQuantiy.HeaderText = "Số Lượng";
             this.ProductQuantiy.Name = "ProductQuantiy";
             this.ProductQuantiy.ReadOnly = true;
@@ -541,7 +542,7 @@
             dataGridViewCellStyle7.Format = "N0";
             dataGridViewCellStyle7.NullValue = null;
             this.UnitPrice.DefaultCellStyle = dataGridViewCellStyle7;
-            this.UnitPrice.FillWeight = 83.61494F;
+            this.UnitPrice.FillWeight = 112.9429F;
             this.UnitPrice.HeaderText = "Đơn giá (VNĐ)";
             this.UnitPrice.Name = "UnitPrice";
             this.UnitPrice.ReadOnly = true;
@@ -553,7 +554,7 @@
             dataGridViewCellStyle8.Format = "N0";
             dataGridViewCellStyle8.NullValue = null;
             this.SubTotal.DefaultCellStyle = dataGridViewCellStyle8;
-            this.SubTotal.FillWeight = 76.14214F;
+            this.SubTotal.FillWeight = 121.8274F;
             this.SubTotal.HeaderText = "Thành Tiền (VNĐ)";
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.ReadOnly = true;

@@ -10,7 +10,7 @@ namespace DienMayXanh_Store.Charts
 {
     class Line
     {
-        public static void loadChart(Guna.Charts.WinForms.GunaChart chart, List<decimal> revenue)
+        public static void loadChart(Guna.Charts.WinForms.GunaChart chart, List<decimal> revenue , List<decimal> profit)
         {
             List<string> date = new List<string>();
             int index = 30;
@@ -25,21 +25,24 @@ namespace DienMayXanh_Store.Charts
             datasetRevenue.PointRadius = 3;
             datasetRevenue.FillColor = Color.Red;
             datasetRevenue.BorderColor = Color.Red;
-            datasetRevenue.Label = "Tổng thu";
+            datasetRevenue.Label = "Doanh thu";
             datasetRevenue.PointStyle = PointStyle.Circle;
             var r = new Random();
             for (int i = 0; i < date.Count; i++)
-            {
-                //random number
-                int num = r.Next(10, 1000);
-
                 datasetRevenue.DataPoints.Add(date[i], (double)revenue[i]);
-            }
+            var datasetProfit = new GunaLineDataset();
+            datasetProfit.PointRadius = 3;
+            datasetProfit.FillColor = Color.Black;
+            datasetProfit.BorderColor = Color.Black;
+            datasetProfit.Label = "Doanh số";
+            datasetProfit.PointStyle = PointStyle.Circle;
+            for (int i = 0; i < date.Count; i++)
+                datasetProfit.DataPoints.Add(date[i], (double)profit[i]);
 
-          
+
             //Add a new dataset to a chart.Datasets
             chart.Datasets.Add(datasetRevenue);
-
+            chart.Datasets.Add(datasetProfit);
             //An update was made to re-render the chart
             chart.Update();
         }

@@ -44,26 +44,6 @@ namespace DienMayXanh_Store.Views
             this.lblPosition = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cmbFilterCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lblWarehouse = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.cmbWarehouse = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.pnlContainerOrder = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pnlListOrder = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pblListOrderHeader = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblImg = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblName = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblQuantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.lblTotalPice = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +53,26 @@ namespace DienMayXanh_Store.Views
             this.btnAddProduct = new System.Windows.Forms.DataGridViewButtonColumn();
             this.BrandID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblWarehouse = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cmbWarehouse = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblImg = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblQuantity = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.lblTotalPice = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnPayment = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnlListOrder = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.pnlContainerOrder = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.pblListOrderHeader = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.pnlContainerOrder.SuspendLayout();
             this.pblListOrderHeader.SuspendLayout();
@@ -129,7 +129,6 @@ namespace DienMayXanh_Store.Views
             this.dgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
             this.dgvProduct.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvProduct.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(215)))), ((int)(((byte)(250)))));
@@ -202,6 +201,92 @@ namespace DienMayXanh_Store.Views
             this.dgvProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             // 
+            // ProductID
+            // 
+            this.ProductID.DataPropertyName = "ProductID";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ProductID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ProductID.FillWeight = 93.56895F;
+            this.ProductID.HeaderText = "Mã sản phẩm";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductName.DataPropertyName = "Name";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ProductName.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ProductName.FillWeight = 217.838F;
+            this.ProductName.HeaderText = "Tên sản phẩm";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // ProductPrice
+            // 
+            this.ProductPrice.DataPropertyName = "Price";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.ProductPrice.DefaultCellStyle = dataGridViewCellStyle5;
+            this.ProductPrice.FillWeight = 88.20953F;
+            this.ProductPrice.HeaderText = "Đơn giá";
+            this.ProductPrice.Name = "ProductPrice";
+            this.ProductPrice.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Quantity.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Quantity.FillWeight = 75.3397F;
+            this.Quantity.HeaderText = "Tồn kho";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "CateName";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Category.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Category.FillWeight = 78.78949F;
+            this.Category.HeaderText = "Danh mục";
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
+            // 
+            // Brand
+            // 
+            this.Brand.DataPropertyName = "BrandName";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Brand.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Brand.FillWeight = 89.40144F;
+            this.Brand.HeaderText = "Thương hiệu";
+            this.Brand.Name = "Brand";
+            this.Brand.ReadOnly = true;
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.FillWeight = 56.85278F;
+            this.btnAddProduct.HeaderText = ".....";
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.ReadOnly = true;
+            this.btnAddProduct.Text = "Thêm";
+            this.btnAddProduct.UseColumnTextForButtonValue = true;
+            // 
+            // BrandID
+            // 
+            this.BrandID.DataPropertyName = "BrandID";
+            this.BrandID.HeaderText = "BrandID";
+            this.BrandID.Name = "BrandID";
+            this.BrandID.ReadOnly = true;
+            this.BrandID.Visible = false;
+            // 
+            // CategoryID
+            // 
+            this.CategoryID.DataPropertyName = "CategoryID";
+            this.CategoryID.HeaderText = "CateID";
+            this.CategoryID.Name = "CategoryID";
+            this.CategoryID.ReadOnly = true;
+            this.CategoryID.Visible = false;
+            // 
             // lblWarehouse
             // 
             this.lblWarehouse.BackColor = System.Drawing.Color.Transparent;
@@ -238,147 +323,6 @@ namespace DienMayXanh_Store.Views
             this.cmbWarehouse.Size = new System.Drawing.Size(271, 36);
             this.cmbWarehouse.TabIndex = 17;
             this.cmbWarehouse.SelectedIndexChanged += new System.EventHandler(this.cmbWarehouse_SelectedIndexChanged);
-            // 
-            // pnlContainerOrder
-            // 
-            this.pnlContainerOrder.BackColor = System.Drawing.Color.Transparent;
-            this.pnlContainerOrder.Controls.Add(this.pnlListOrder);
-            this.pnlContainerOrder.Controls.Add(this.pblListOrderHeader);
-            this.pnlContainerOrder.FillColor = System.Drawing.Color.White;
-            this.pnlContainerOrder.Location = new System.Drawing.Point(0, 224);
-            this.pnlContainerOrder.Name = "pnlContainerOrder";
-            this.pnlContainerOrder.Radius = 10;
-            this.pnlContainerOrder.ShadowColor = System.Drawing.Color.Gray;
-            this.pnlContainerOrder.ShadowDepth = 150;
-            this.pnlContainerOrder.Size = new System.Drawing.Size(1159, 256);
-            this.pnlContainerOrder.TabIndex = 19;
-            // 
-            // pnlListOrder
-            // 
-            this.pnlListOrder.AutoScroll = true;
-            this.pnlListOrder.BackColor = System.Drawing.Color.Transparent;
-            this.pnlListOrder.FillColor = System.Drawing.Color.White;
-            this.pnlListOrder.Location = new System.Drawing.Point(0, 58);
-            this.pnlListOrder.Name = "pnlListOrder";
-            this.pnlListOrder.ShadowColor = System.Drawing.Color.Black;
-            this.pnlListOrder.Size = new System.Drawing.Size(1159, 195);
-            this.pnlListOrder.TabIndex = 1;
-            // 
-            // pblListOrderHeader
-            // 
-            this.pblListOrderHeader.BackColor = System.Drawing.Color.Transparent;
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel7);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel6);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel5);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel4);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel3);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel2);
-            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel1);
-            this.pblListOrderHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pblListOrderHeader.FillColor = System.Drawing.Color.White;
-            this.pblListOrderHeader.Location = new System.Drawing.Point(0, 0);
-            this.pblListOrderHeader.Name = "pblListOrderHeader";
-            this.pblListOrderHeader.ShadowColor = System.Drawing.Color.Black;
-            this.pblListOrderHeader.Size = new System.Drawing.Size(1159, 58);
-            this.pblListOrderHeader.TabIndex = 0;
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.AutoSize = false;
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(880, 0);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(200, 58);
-            this.guna2HtmlLabel7.TabIndex = 25;
-            this.guna2HtmlLabel7.Text = "Thành tiền";
-            this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(740, 0);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(140, 58);
-            this.guna2HtmlLabel6.TabIndex = 24;
-            this.guna2HtmlLabel6.Text = "Nhà CC";
-            this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(625, 0);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(115, 58);
-            this.guna2HtmlLabel5.TabIndex = 23;
-            this.guna2HtmlLabel5.Text = "Danh mục";
-            this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(545, 0);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(80, 58);
-            this.guna2HtmlLabel4.TabIndex = 22;
-            this.guna2HtmlLabel4.Text = "Số lượng";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(415, 0);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(130, 58);
-            this.guna2HtmlLabel3.TabIndex = 21;
-            this.guna2HtmlLabel3.Text = "Đơn giá";
-            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(90, 0);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(325, 58);
-            this.guna2HtmlLabel2.TabIndex = 20;
-            this.guna2HtmlLabel2.Text = "Tên sản phẩm";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(90, 58);
-            this.guna2HtmlLabel1.TabIndex = 19;
-            this.guna2HtmlLabel1.Text = "Ảnh";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblImg
             // 
@@ -516,91 +460,146 @@ namespace DienMayXanh_Store.Views
             this.txtSearch.TextOffset = new System.Drawing.Point(10, 0);
             this.txtSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSearch_KeyUp);
             // 
-            // ProductID
+            // pnlListOrder
             // 
-            this.ProductID.DataPropertyName = "ProductID";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.ProductID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ProductID.FillWeight = 93.56895F;
-            this.ProductID.HeaderText = "Mã sản phẩm";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
+            this.pnlListOrder.AutoScroll = true;
+            this.pnlListOrder.BackColor = System.Drawing.Color.Transparent;
+            this.pnlListOrder.FillColor = System.Drawing.Color.White;
+            this.pnlListOrder.Location = new System.Drawing.Point(0, 58);
+            this.pnlListOrder.Name = "pnlListOrder";
+            this.pnlListOrder.ShadowColor = System.Drawing.Color.Black;
+            this.pnlListOrder.Size = new System.Drawing.Size(1159, 195);
+            this.pnlListOrder.TabIndex = 1;
             // 
-            // ProductName
+            // pnlContainerOrder
             // 
-            this.ProductName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductName.DataPropertyName = "Name";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ProductName.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ProductName.FillWeight = 217.838F;
-            this.ProductName.HeaderText = "Tên sản phẩm";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
+            this.pnlContainerOrder.BackColor = System.Drawing.Color.Transparent;
+            this.pnlContainerOrder.Controls.Add(this.pnlListOrder);
+            this.pnlContainerOrder.Controls.Add(this.pblListOrderHeader);
+            this.pnlContainerOrder.FillColor = System.Drawing.Color.White;
+            this.pnlContainerOrder.Location = new System.Drawing.Point(0, 224);
+            this.pnlContainerOrder.Name = "pnlContainerOrder";
+            this.pnlContainerOrder.Radius = 10;
+            this.pnlContainerOrder.ShadowColor = System.Drawing.Color.Gray;
+            this.pnlContainerOrder.ShadowDepth = 150;
+            this.pnlContainerOrder.Size = new System.Drawing.Size(1159, 256);
+            this.pnlContainerOrder.TabIndex = 19;
             // 
-            // ProductPrice
+            // pblListOrderHeader
             // 
-            this.ProductPrice.DataPropertyName = "Price";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.ProductPrice.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ProductPrice.FillWeight = 88.20953F;
-            this.ProductPrice.HeaderText = "Đơn giá";
-            this.ProductPrice.Name = "ProductPrice";
-            this.ProductPrice.ReadOnly = true;
+            this.pblListOrderHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel7);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel6);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel5);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel4);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel3);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel2);
+            this.pblListOrderHeader.Controls.Add(this.guna2HtmlLabel1);
+            this.pblListOrderHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pblListOrderHeader.FillColor = System.Drawing.Color.White;
+            this.pblListOrderHeader.Location = new System.Drawing.Point(0, 0);
+            this.pblListOrderHeader.Name = "pblListOrderHeader";
+            this.pblListOrderHeader.ShadowColor = System.Drawing.Color.Black;
+            this.pblListOrderHeader.Size = new System.Drawing.Size(1159, 58);
+            this.pblListOrderHeader.TabIndex = 0;
             // 
-            // Quantity
+            // guna2HtmlLabel3
             // 
-            this.Quantity.DataPropertyName = "Quantity";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Quantity.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Quantity.FillWeight = 75.3397F;
-            this.Quantity.HeaderText = "Tồn kho";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(415, 0);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(130, 58);
+            this.guna2HtmlLabel3.TabIndex = 21;
+            this.guna2HtmlLabel3.Text = "Đơn giá";
+            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Category
+            // guna2HtmlLabel4
             // 
-            this.Category.DataPropertyName = "CateName";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Category.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Category.FillWeight = 78.78949F;
-            this.Category.HeaderText = "Danh mục";
-            this.Category.Name = "Category";
-            this.Category.ReadOnly = true;
+            this.guna2HtmlLabel4.AutoSize = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(545, 0);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(80, 58);
+            this.guna2HtmlLabel4.TabIndex = 22;
+            this.guna2HtmlLabel4.Text = "Số lượng";
+            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Brand
+            // guna2HtmlLabel5
             // 
-            this.Brand.DataPropertyName = "BrandName";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Brand.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Brand.FillWeight = 89.40144F;
-            this.Brand.HeaderText = "Thương hiệu";
-            this.Brand.Name = "Brand";
-            this.Brand.ReadOnly = true;
+            this.guna2HtmlLabel5.AutoSize = false;
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(625, 0);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(115, 58);
+            this.guna2HtmlLabel5.TabIndex = 23;
+            this.guna2HtmlLabel5.Text = "Danh mục";
+            this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAddProduct
+            // guna2HtmlLabel6
             // 
-            this.btnAddProduct.FillWeight = 56.85278F;
-            this.btnAddProduct.HeaderText = ".....";
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.ReadOnly = true;
-            this.btnAddProduct.Text = "Thêm";
-            this.btnAddProduct.UseColumnTextForButtonValue = true;
+            this.guna2HtmlLabel6.AutoSize = false;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(740, 0);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(140, 58);
+            this.guna2HtmlLabel6.TabIndex = 24;
+            this.guna2HtmlLabel6.Text = "Nhà CC";
+            this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BrandID
+            // guna2HtmlLabel7
             // 
-            this.BrandID.DataPropertyName = "BrandID";
-            this.BrandID.HeaderText = "BrandID";
-            this.BrandID.Name = "BrandID";
-            this.BrandID.ReadOnly = true;
-            this.BrandID.Visible = false;
+            this.guna2HtmlLabel7.AutoSize = false;
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(880, 0);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(200, 58);
+            this.guna2HtmlLabel7.TabIndex = 25;
+            this.guna2HtmlLabel7.Text = "Thành tiền";
+            this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CategoryID
+            // guna2HtmlLabel2
             // 
-            this.CategoryID.DataPropertyName = "CategoryID";
-            this.CategoryID.HeaderText = "CateID";
-            this.CategoryID.Name = "CategoryID";
-            this.CategoryID.ReadOnly = true;
-            this.CategoryID.Visible = false;
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(90, 0);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(325, 58);
+            this.guna2HtmlLabel2.TabIndex = 20;
+            this.guna2HtmlLabel2.Text = "Tên sản phẩm";
+            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(90, 58);
+            this.guna2HtmlLabel1.TabIndex = 19;
+            this.guna2HtmlLabel1.Text = "Ảnh";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormExportProduct
             // 
@@ -636,20 +635,10 @@ namespace DienMayXanh_Store.Views
         private Guna.UI2.WinForms.Guna2DataGridView dgvProduct;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblWarehouse;
         private Guna.UI2.WinForms.Guna2ComboBox cmbWarehouse;
-        private Guna.UI2.WinForms.Guna2ShadowPanel pnlContainerOrder;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblImg;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPrice;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblQuantity;
-        private Guna.UI2.WinForms.Guna2ShadowPanel pblListOrderHeader;
-        private Guna.UI2.WinForms.Guna2ShadowPanel pnlListOrder;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.ToolTip toolTip;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalPice;
         private Guna.UI2.WinForms.Guna2Button btnPayment;
@@ -662,5 +651,15 @@ namespace DienMayXanh_Store.Views
         private System.Windows.Forms.DataGridViewButtonColumn btnAddProduct;
         private System.Windows.Forms.DataGridViewTextBoxColumn BrandID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CategoryID;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnlListOrder;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pnlContainerOrder;
+        private Guna.UI2.WinForms.Guna2ShadowPanel pblListOrderHeader;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

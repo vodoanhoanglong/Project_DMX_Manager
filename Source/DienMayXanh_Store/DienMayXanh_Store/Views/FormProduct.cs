@@ -25,7 +25,6 @@ namespace DienMayXanh_Store.Views
         {
             toolTip.SetToolTip(btnAddCategory, "Thêm sản phẩm");
             toolTip.SetToolTip(btnAddCategory, "Thêm nhà cung cấp");
-            toolTip.SetToolTip(btnReload, "Đặt lại");
 
             loadCmbFilter();
 
@@ -56,11 +55,6 @@ namespace DienMayXanh_Store.Views
             cbmFilter.ValueMember = "CategoryID";
             cbmFilter.DisplayMember = "Name";
             cbmFilter.DataSource = table;
-        }
-
-        private void btnAddProduct_Click(object sender, EventArgs e)
-        {
-            new FormAddProduct().ShowDialog();
         }
 
         private void loadData(string cate = "0")
@@ -97,6 +91,16 @@ namespace DienMayXanh_Store.Views
             cbmFilter.SelectedIndex = 0;
             loadData();
             currKey = "";
+        }
+
+        private void btnAddCatagory_Click(object sender, EventArgs e)
+        {
+            new Dialogs.FormAddCategory().ShowDialog();
+        }
+
+        private void btnAddProducer_Click(object sender, EventArgs e)
+        {
+            new Dialogs.FormAddProducer().ShowDialog();
         }
     }
 }

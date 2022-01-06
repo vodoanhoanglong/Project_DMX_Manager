@@ -14,6 +14,7 @@ namespace DienMayXanh_Store.Views
     public partial class FormCustomer : Form
     {
         private ContextDB context = Program.context;
+        private string currKey = "";
         public FormCustomer()
         {
             InitializeComponent();
@@ -22,8 +23,12 @@ namespace DienMayXanh_Store.Views
 
         private void initialData(object sender, EventArgs e)
         {
-            var customers = context.CUSTOMERS
-                 .AsEnumerable()
+            var customers = currKey.Equals("") ? context.CUSTOMERS 
+                : context.CUSTOMERS.Where(x => x.Name.Contains(currKey) 
+                || x.CustomerID.Contains(currKey) || x.Phone.Contains(currKey));
+                 
+            dgv_listCustomer.DataSource = customers
+                .AsEnumerable()
                  .Select((customer, index) => new
                  {
                      No = ++index,
@@ -32,23 +37,30 @@ namespace DienMayXanh_Store.Views
                      customer.Address,
                      Gender = customer.Gender ? "Nam" : "Nữ",
                      customer.Phone,
-                 }).ToList();
-            dgv_listCustomer.DataSource = customers;
+                 }).ToList(); ;
         }
 
         private void btn_ViewDetail_Click(object sender, DataGridViewCellEventArgs e)
         {
             var dataGridView = (DataGridView)sender;
-            if(dataGridView.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            if (dataGridView.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
                 string _ID = dataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
                 string _Name = dataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
                 string _Phone = dataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
                 string _Address = dataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
-                object _customer = new { _ID, _Name,_Phone,_Address};
+                string _Gender = dataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+                object _customer = new { _ID, _Name, _Gender, _Phone, _Address };
                 FormMenu.instance.openChildForm(new CustomerDetail(_customer));
                 this.Hide();
             }
+        }
+
+        private void txtSearch_KeyUp(object sender, KeyEventArgs e)
+        {
+            currKey = txtSearch.Text;
+            initialData(sender, e);
+            currKey = "";
         }
     }
 }
