@@ -27,6 +27,7 @@ namespace DienMayXanh_Store.Views
         private void FormProduct_Load(object sender, EventArgs e)
         {
             dgvProduct.AutoGenerateColumns = false;
+            dgvProduct.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             toolTip.SetToolTip(btnAddCategory, "Thêm sản phẩm");
             toolTip.SetToolTip(btnAddCategory, "Thêm nhà cung cấp");
 

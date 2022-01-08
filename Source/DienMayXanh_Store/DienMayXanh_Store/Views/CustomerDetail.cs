@@ -57,7 +57,9 @@ namespace DienMayXanh_Store.Views
                    item.CreateAt,
                    item.PaymentMethod,
                    item.Total
-               }).ToList();
+               })
+               .OrderByDescending(x => x.RecieptID)
+               .ToList();
             dgv_ListInvoice.DataSource = Orders;
 
             int totalQuantity = context.RECIEPTS

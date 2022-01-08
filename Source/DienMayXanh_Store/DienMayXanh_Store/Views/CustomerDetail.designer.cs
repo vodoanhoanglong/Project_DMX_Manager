@@ -529,9 +529,10 @@
             this.FromDate.BorderRadius = 5;
             this.FromDate.Checked = true;
             this.FromDate.CheckedState.Parent = this.FromDate;
+            this.FromDate.CustomFormat = "dd/MM/yyyy";
             this.FromDate.FillColor = System.Drawing.Color.White;
             this.FromDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.FromDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FromDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FromDate.HoverState.Parent = this.FromDate;
             this.FromDate.Location = new System.Drawing.Point(642, 172);
             this.FromDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -552,9 +553,10 @@
             this.ToDate.BorderRadius = 5;
             this.ToDate.Checked = true;
             this.ToDate.CheckedState.Parent = this.ToDate;
+            this.ToDate.CustomFormat = "dd/MM/yyyy";
             this.ToDate.FillColor = System.Drawing.Color.White;
             this.ToDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ToDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ToDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ToDate.HoverState.Parent = this.ToDate;
             this.ToDate.Location = new System.Drawing.Point(832, 172);
             this.ToDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);

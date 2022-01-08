@@ -58,7 +58,9 @@ namespace DienMayXanh_Store.Views
                               item.StaffName,
                               item.CreateAt,
                               item.TotalPrice,
-                          }).ToList();
+                          })
+                          .OrderByDescending(x => x.RecieptID)
+                          .ToList();
             dgv_fullOrder.DataSource = orders;
             var carts = context.CARTITEMS.ToList();
             decimal totalProfit = 0;
